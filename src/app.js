@@ -17,23 +17,6 @@ const futureDateValues = {
 
 let countDownValues = {};
 
-
-setTimeout(function () {
-    let counterOne = 60;
-    let counterTwo = 60;
-    let counterThree = 60;
-    let counterFour = 60;
-
-    if (counterOne > 10) {
-        // daysBtn.innerHTML = counter--;
-        // hoursBtn.innerHTML = counter--;
-        // minutesBtn.innerHTML = counter--;
-        // secondsBtn.innerHTML = counter--;
-    }
-}, 50);
-
-
-
 //Declare future count down date and convert it to milliseconds `getTime()`
 const countDownDate = new Date(
     futureDateValues.month + ',' + futureDateValues.day + ',' + futureDateValues.year + ',' + futureDateValues.time.hours + ':' + futureDateValues.time.minutes + ':' + futureDateValues.time.seconds
@@ -89,24 +72,3 @@ function msToTime(duration, data) {
     }
     return data;
 }
-
-// function animateValue(objectSelector, start, end, duration) {
-//     var range = end - start;
-//     var current = start;
-//     var increment = end > start ? 1 : -1;
-//     var stopTime = Math.abs(Math.floor(duration / range));
-//     var objectBlock = document.querySelectorAll('.' + objectSelector);
-
-//     var timer = setInterval(function () {
-//         current += increment;
-//         for (let obj of objectBlock) {
-//             obj.innerHTML = current;
-
-//             if (current == end) {
-//                 clearInterval(timer);
-//             }
-//         }
-
-//     }, stopTime);
-// }
-// animateValue("display-2", 60, 10, 1000);
